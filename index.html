@@ -10,26 +10,35 @@
   <body>
     <div class="container">
       <div class="calc">
-        <input type="text" id="inputext" placeholder="0" />
-        <button>C</button>
-        <button>DEL</button>
-        <button>%</button>
-        <button>/</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>*</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>.</button>
-        <button>0</button>
-        <button class="equal">=</button>
+
+        <!--calculator display -->
+        <div class="display">
+          <div class="calculator-display">
+            <output class="input" id="input" type="text">121</output>
+            <output class="result" id="result" type="text">212</output>
+          </div>
+        </div>
+
+        <!--buttons-->
+        <button onclick="calculate()">C</button>
+        <button onclick="calculate()">DEL</button>
+        <button onclick="calculate('%')">%</button>
+        <button onclick="calculate('/')">/</button>
+        <button onclick="calculate(7)">7</button>
+        <button onclick="calculate(8)">8</button>
+        <button onclick="calculate(9)">9</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate(4)">4</button>
+        <button onclick="calculate(5)">5</button>
+        <button onclick="calculate(6)">6</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate(1)">1</button>
+        <button onclick="calculate(2)">2</button>
+        <button onclick="calculate(3)">3</button>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('.')">.</button>
+        <button onclick="calculate(0)">0</button>
+        <button class="equal" onclick="Result">=</button>
       </div>
     </div>
 
